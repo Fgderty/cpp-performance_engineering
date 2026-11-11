@@ -1,0 +1,12 @@
+# Build artifacts
+build/
+*.exe
+*.o
+*.obj
+*.out
+
+# IDE and OS specific
+.vs/
+.vscode/
+idea/
+.DS_Store
