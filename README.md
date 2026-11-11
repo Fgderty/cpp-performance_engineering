@@ -24,5 +24,5 @@ The exercises are organized by chapters and cover the following concepts:
 Ensure you have `g++` installed on your system.
 To compile and run any specific task (e.g., a task from Chapter 1):
 ```bash
-g++ -std=c++17 Chapter_1/Gl1-1.cpp -o Gl1-1
-./Gl1-1
+g++ -std=c++17 Chapter_1/Task_1.cpp -o Task_1
+./Task_1
