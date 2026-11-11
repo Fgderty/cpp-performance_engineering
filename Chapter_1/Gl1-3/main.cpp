@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string_view>
+
+int main() {
+	std::ios_base::sync_with_stdio(false);
+	std::cin.tie(nullptr);
+
+	constexpr std::string_view msg_input  = "Enter count of numbers: \n";
+	constexpr std::string_view line_start = "=========\n";
+	constexpr std::string_view line_end   = "\n=========\n";
+	constexpr std::string_view space	  = " ";
+
+	std::cout << msg_input << line_start;
+
+	long long n = 0;
+	std::cin >> n;
+
+	if (std::cin.fail() || n <= 0) {
+		return 1;
+	}
+
+	long long current_value = 3;
+
+	for (long long i = 0; i < n; ++i) {
+		std::cout << current_value << space;
+
+		current_value += 4;
+	}
+
+	std::cout << line_end;
+	std::cin.get();
+
+	return 0;
+}
